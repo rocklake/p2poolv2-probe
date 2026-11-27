@@ -594,11 +594,11 @@
         } else {
             document.getElementById("plot_w").hidden = true
         }
-        hashrate_bitcoin_sc = document.getElementById("hashrate_bitcoin_sc");
+        let hashrate_bitcoin_sc = document.getElementById("hashrate_bitcoin_sc");
         hashrate_bitcoin_sc.style = "width: 100%; height: 240px;";
         plot(hashrate_bitcoin_sc, [sc_hr, bitcoin_hr]);
 
-        hashrate_sc = document.getElementById("hashrate_sc");
+        let hashrate_sc = document.getElementById("hashrate_sc");
         hashrate_sc.style = "width: 100%; height: 240px;";
         plot(hashrate_sc, [sc_hr]);
     }
