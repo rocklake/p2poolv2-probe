@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>P2poolv2 probe</title>
+    <title>P2Poolv2 probe</title>
     <style>
         /* main */
         body {
@@ -100,6 +100,9 @@
             white-space: nowrap;
             text-overflow: ellipsis;
         }
+        .tablist {
+            border-top: 1px solid #333;
+        }
     </style>
 </head>
 
@@ -120,7 +123,8 @@
 
 
 
-    <div role="tablist">
+    <div role="tablist" class="tablist">
+        <br>
         <button role="tab" id="tab-overview" aria-controls="overview-panel" aria-selected="true">Overview</button>
         <button role="tab" id="tab-mining" aria-controls="mining-panel" aria-selected="false">Mining</button>
         <button role="tab" id="tab-network" aria-controls="network-panel" aria-selected="false">Network</button>
@@ -146,10 +150,10 @@
 
     <section role="tabpanel" id="mining-panel" aria-labelledby="tab-mining" hidden>
         <span style="color:#52d273">P2Pool hashrate</span> <span style="color:#f5a623">Bitcoin hashrate</span><br>
-        <button id="plot_w" hidden>The graph still may be plotting click me to reload.</button>
-        <span>Bitcoin difficulty hash rate Vs p2poolv2. last two days</span>
+        <button id="plot_w" hidden>The graph still may be plotting. Click me to reload.</button>
+        <span>Bitcoin difficulty hash rate vs. P2Poolv2 for the last two days</span>
         <canvas id="hashrate_bitcoin_sc"></canvas>
-        <span>P2poolv2 hash rate. last two days</span>
+        <span>P2poolv2 hash rate for the last two days</span>
         <canvas id="hashrate_sc"></canvas>
     </section>
 
